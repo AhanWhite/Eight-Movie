@@ -41,6 +41,7 @@
 
     </RelativeLayout>
     <ListView
+        android:background="@drawable/girl_bg"
         android:layout_below="@id/top"
         android:id="@+id/lv_show"
         android:layout_width="match_parent"
