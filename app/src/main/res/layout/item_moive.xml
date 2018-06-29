@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="@drawable/shape_seven"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/iv_film"
+            android:layout_width="100dp"
+            android:layout_height="140dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_frag_hit_rv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/iv_film_versions"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_frag_hit_rv_content"/>
+
+        <TextView
+            android:id="@+id/pingfen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_frag_hit_rv_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/rating"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/show_pingfen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_frag_hit_rv_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/pingfen"
+            android:text=""
+            android:textColor="#ffc22f"
+            android:textSize="15sp"
+            android:layout_toEndOf="@id/pingfen" />
+
+        <TextView
+            android:id="@+id/tv_commonSpecial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pingfen"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:textColor="#6e6e6e"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/tv_NearestCinemaCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_commonSpecial"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="#6e6e6e"
+            android:textSize="13sp"/>
+    </RelativeLayout>
+</LinearLayout>
